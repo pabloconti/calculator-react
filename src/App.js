@@ -13,14 +13,6 @@ function App() {
     setInput(input + val);
   }
 
-  const verificarInput = (val) =>{
-
-    for(let x; x<val.length; x++){
-      let stringForArray = stringForArray + toString(val[x]) + ', '
-    }
-    //val = JSON.parse(`[ ${stringForArray} ]`)
-  }
-
   const calcularResultado = () => {
     if(input){
       setInput(evaluate(input))
